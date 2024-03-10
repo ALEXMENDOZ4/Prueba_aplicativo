@@ -14,9 +14,9 @@ const slideIn = keyframes`
 `;
 
 export const Tooltip = styled.div<{hide: boolean}>`
-    position: absolute;
+    position: fixed;
     right: 4rem;
-    bottom: -5rem;
+    bottom: 2rem;
     background-color: ${colors.white};
     box-shadow: 0px 3px 10px ${colors.colorGray5};
     border-radius: 14px;

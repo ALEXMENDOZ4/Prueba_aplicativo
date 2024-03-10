@@ -83,6 +83,9 @@ export const Table = styled.div`
 `;
 
 export const Titles = styled.div`
+  /* position: sticky;
+  top: 0; */
+  /* z-index: 1; */
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   background-color: ${colors.white2};
@@ -97,8 +100,9 @@ export const Titles = styled.div`
 `;
 
 export const Information = styled.div`
-  height: 50vh;
-  overflow-y: scroll;
+  height: 100vh;
+  max-height: 350px;
+  overflow-y: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
 
