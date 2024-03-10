@@ -75,10 +75,11 @@ export const Input = styled.input<IInput>`
     font-family: "Open sans";
     font-weight: ${fontWeight[400]};
   }
-
+  
   &:valid ~ ${Label} {
     top: 12px;
     left: 16px;
+    font-size: 12px;
   }
 
   ${({ $error }) =>
