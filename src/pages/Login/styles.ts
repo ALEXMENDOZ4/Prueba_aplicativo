@@ -58,35 +58,43 @@ export const Background = styled.div`
         position: fixed;
         top: 34%;
         right: 65%;
-        z-index: -1;
+        z-index: 9999;
     }
     
     .background_2{
         position: fixed;
         top: 76%;
         right: 30%;
-        z-index: -1;
+        z-index: 9999;
     }
 
     .background_3{
         position: fixed;
         top: 70%;
         right: 30%;
-        z-index: -1;
+        z-index: 9999;
     }
 
     .background_4{
         position: fixed;
         top: 50%;
         right: 70%;
-        z-index: -1;
+        z-index: 9999;
     }
 
     .background_5{
         position: fixed;
+        z-index: -1; 
         top: -10rem;
-        right: -15%;
-        z-index: -1;
+        right: -25%;
+        background-attachment: fixed;
+
+        @media(max-width: 1920px) and (min-width: 1281px){
+          position: fixed;
+          z-index: -1;
+          top: -10rem;
+          right: -15%;
+        }
     }
 
     .background_6{
