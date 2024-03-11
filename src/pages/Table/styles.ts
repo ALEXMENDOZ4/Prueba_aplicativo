@@ -99,9 +99,9 @@ export const Titles = styled.div`
   }
 `;
 
-export const Information = styled.div`
-  height: 100vh;
-  max-height: 350px;
+export const Information = styled.div<{ registryNumber: string }>`
+  height: ${({ registryNumber }) => registryNumber === "15" ? "calc(100vh + 350px)" 
+  : registryNumber === "10" ? "calc(100vh + 150px)" : registryNumber === "5" ? "calc(70vh)" : null};
   overflow-y: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;

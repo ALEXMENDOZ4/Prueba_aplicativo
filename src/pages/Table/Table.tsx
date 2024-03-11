@@ -57,7 +57,7 @@ const Table = () => {
     dateUntil: "",
   });
 
-  const [number, setNumber] = useState("");
+  const [number, setNumber] = useState("5");
 
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = Number(number) || 5;
@@ -162,7 +162,7 @@ const Table = () => {
             <span>Número de documento</span>
             <span>Monto</span>
           </sc.Titles>
-          <sc.Information>
+          <sc.Information registryNumber={number}>
           {
             filterData(user).map((res, index) => (
               <div className="information" key={index}>
