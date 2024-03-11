@@ -14,8 +14,8 @@ const Header = () => {
 
   return (
     <sc.Header>
-        <div className="title" onClick={closed}>
-            <img src={Grupo_175} alt="" />
+        <div className="title">
+            <img src={Grupo_175} alt="" onClick={closed}/>
         </div>
         <div className="close" onClick={closed}>
             <span>Cerrar sesión</span>

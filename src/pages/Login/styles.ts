@@ -4,7 +4,7 @@ import { fontWeight } from "../../styles/fontWeight";
 
 const slideIn = keyframes`
   0% {
-    transform: translateX(-400%);
+    transform: translateX(-100%);
   }
   100% {
     transform: translateX(0%);
@@ -55,43 +55,43 @@ export const Background = styled.div`
     }
 
     .background_1{
-        position: absolute;
+        position: fixed;
         top: 34%;
         right: 65%;
         z-index: -1;
     }
     
     .background_2{
-        position: absolute;
+        position: fixed;
         top: 76%;
         right: 30%;
         z-index: -1;
     }
 
     .background_3{
-        position: absolute;
+        position: fixed;
         top: 70%;
         right: 30%;
         z-index: -1;
     }
 
     .background_4{
-        position: absolute;
+        position: fixed;
         top: 50%;
         right: 70%;
         z-index: -1;
     }
 
     .background_5{
-        position: absolute;
-        top: -18%;
+        position: fixed;
+        top: -10rem;
         right: -15%;
         z-index: -1;
     }
 
     .background_6{
-        position: absolute;
-        top: 55%;
+        position: fixed;
+        bottom: -18rem;
         right: 65%;
         z-index: -1;
     }

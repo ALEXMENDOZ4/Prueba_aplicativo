@@ -14,10 +14,11 @@ export const Header = styled.div`
         justify-content: center;
         align-items: center;
         width: 100%;
-        cursor: pointer;
+        
         img{
             width: 83px;
             height: 24px;
+            cursor: pointer;
         }
     }
 
